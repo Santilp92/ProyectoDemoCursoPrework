@@ -14,3 +14,4 @@ function segundoNumeroMayor (numeros){
 }
 let nums =[8,4,6,10,9,11]
 console.log(segundoNumeroMayor (nums))
+
