@@ -1,16 +1,16 @@
-function segundoNumeroMayor (numeros){
-    let primero = numeros [0]
-    let segundo = 0;
-    for (let i=0; i < numeros.length; i++ ){
-        if (numeros [i] > primero){
-            segundo = primero;
-            primero = numeros [i]
+function secondLargestNumber (numbers){
+    let first = numbers [0]
+    let second = 0;
+    for (let i=0; i < (numbers.length); i++ ){
+        if (numbers [i] > first){
+            second = first
+            first = numbers [i]
         }
-        if (numeros [i]> segundo && numeros[i]< primero){
-            segundo = numeros [0];
+        if (numbers [i]> second && numbers [i]< first){
+            second = numbers [i];
         }
     }
-    return segundo
+    return second
 }
-let nums =[8,4,6,10,9,11]
-console.log(segundoNumeroMayor (nums))
+let nums =[35,10,9,20]
+console.log(secondLargestNumber (nums))
